@@ -1,0 +1,13 @@
+pygments: true
+paginate: 4
+lsi: false
+exclude: [README.md, .gitignore]
+
+about:
+  name: Kevin Zhou
+  email: test@example.com
+  quickabout: "A Computer Science student at the University of Waterloo."
+  
+external:
+  github: CongeeCafe
+  stackoverflow: 3408377/congeecafe
