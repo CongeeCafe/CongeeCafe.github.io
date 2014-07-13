@@ -36,7 +36,6 @@
 [class*='cute-'] {
   float: left;
   position: relative;
-  padding: 1.0rem; /* top, bottom, left and right padding for columns. Original 0.65rem  */
   width:100%;
 }
 
@@ -123,6 +122,17 @@
   .cute-10-phone-pull { right: 83.333333333333%; }
   .cute-11-phone-pull { right: 91.666666666667%; }
 
+  /* Add */
+  
+  [class*='cute-'] {
+    padding: 2rem 1rem 2rem 1rem; /* top, bottom, left and right padding for columns. Original 0.65rem  */
+  }
+  
+  .sidebar-container {
+    text-align: center;
+    background: #f1f1f1;
+  }
+  
   .center-phone {
     margin-left: auto;
     margin-right:auto;
@@ -197,6 +207,17 @@
   .cute-10-tablet-pull { right: 83.333333333333%; }
   .cute-11-tablet-pull { right: 91.666666666667%; }
 
+  /* Add */
+  
+  [class*='cute-'] {
+    padding: 3rem 1rem 2rem 1rem; /* top, bottom, left and right padding for columns. Original 0.65rem  */
+  }
+  
+  .sidebar-container {
+    text-align: left;
+    background: #fff;
+  }
+  
   .center-tablet {
     margin-left: auto;
     margin-right:auto;
