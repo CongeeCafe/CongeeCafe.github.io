@@ -121,7 +121,7 @@ pre code {
 
 .name {
   font-size: 1.4em;
-  margin-bottom: 1rem;
+  margin: 0.2rem 0 1rem 0;
 }
 
 .page-title {
@@ -139,11 +139,15 @@ pre code {
 }
 
 .site-links {
-  margin-bottom: 1.8rem;
+  margin-bottom: 1rem;
 }
 
 .archive-list, .site-links-list {
   list-style-type: none;
+}
+
+.sidebar p {
+  font-size: 0.9em;
 }
 
 .post {
