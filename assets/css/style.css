@@ -78,7 +78,7 @@ h1, h2, h1 span {
 }
 
 h1 {
-  font-family: 'PT Serif', serif;
+  font-family: 'Lusitana', serif;
   font-weight: 500;
 }
 
@@ -121,7 +121,8 @@ pre code {
 
 .name {
   font-size: 1.4em;
-  margin: 0.2rem 0 1rem 0;
+  line-height: 1.3em;
+  margin-bottom: 1rem;
 }
 
 .page-title {
