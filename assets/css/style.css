@@ -89,6 +89,7 @@ h1 a:hover, h2 a:hover, .name a:hover, .pagination a:hover, .site-links a:hover,
 h2 {
   font-size: 1.7rem;
   font-weight: 300;
+  margin-bottom: 1rem;
   color: #000;
 }
 
