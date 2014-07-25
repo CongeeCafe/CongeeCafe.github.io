@@ -36,7 +36,7 @@ p {
   font-weight: normal;
   font-size: 1em;
   line-height: 1.6;
-  margin-bottom: 1em;
+  margin-bottom: 1.4em;
 }
 
 table {
@@ -153,8 +153,8 @@ pre code {
 }
 
 .post {
-  margin-bottom: 1rem;
-  padding-bottom: 0.8rem;
+  margin-bottom: 1.8rem;
+  padding-bottom: 2rem;
   border-bottom: #F2F2F2 1px solid;
 }
 
