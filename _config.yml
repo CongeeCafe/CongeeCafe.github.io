@@ -1,4 +1,4 @@
-pygments: true
+highlighter: pygments
 paginate: 4
 lsi: false
 exclude: [README.md, .gitignore]
