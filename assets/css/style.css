@@ -120,6 +120,17 @@ pre code {
   padding: 0;
 }
 
+figure {
+  margin: 1em 0 1em 0;
+  text-align: left;
+}
+
+figure figcaption {
+  text-align: left;
+  font-style: italic;
+  font-size: 0.9em;
+}
+
 .name {
   font-size: 1.4em;
   line-height: 1.3em;
