@@ -7,6 +7,12 @@ layout: default
   {{ page.date | date: "%B %d, %Y" }}
 </p>
 
+{% if page.featured-image %}
+<div class="post-head-image-container">
+  <img class="responsive-img" src="/assets/blog/header-img/{{ page.featured-image}}">
+</div>
+{% endif %}
+
 <div id="post">
   {{ content }}
 </div>

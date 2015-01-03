@@ -131,6 +131,15 @@ figure figcaption {
   font-size: 0.9em;
 }
 
+.post-head-image-container {
+  width: 100%;
+  max-height: 25rem;
+  overflow: hidden;
+  margin-bottom: 1em;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
 .name {
   font-size: 1.4em;
   line-height: 1.3em;
