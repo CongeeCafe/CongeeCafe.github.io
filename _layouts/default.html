@@ -3,8 +3,21 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ site.about.name }} - {{ page.title }}</title>
-  <meta name="author" content="{{ site.theme.name }}" />
-  <meta name="description" content="The blog of {{ site.theme.name }}" />
+  <meta name="author" content="{{ site.about.name }}" />
+  <meta name="description" content="The blog of {{ site.about.name }}" />
+  
+  <script type="text/javascript">
+  var clicky_site_ids = clicky_site_ids || [];
+  clicky_site_ids.push(100805446);
+  (function() {
+    var s = document.createElement('script');
+    s.type = 'text/javascript';
+    s.async = true;
+    s.src = '//static.getclicky.com/js';
+    ( document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0] ).appendChild( s );
+  })();
+  </script>
+  <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100805446ns.gif" /></p></noscript>
   
   {% include css.html %}
   
