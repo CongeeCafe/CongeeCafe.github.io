@@ -1,11 +1,10 @@
 ---
 layout: default
 ---
-
+<time class="date">
+  {{ page.date | date: "%d %B %Y" }}
+</time>
 <h1 class="title">{{ page.title }}</h1>
-<p class="date">
-  {{ page.date | date: "%B %d, %Y" }}
-</p>
 
 {% if page.featured-image %}
 <div class="post-head-image-container">
@@ -13,6 +12,19 @@ layout: default
 </div>
 {% endif %}
 
-<div id="post">
+<div class="post">
   {{ content }}
 </div>
+
+<nav class="pagination">
+  <div class="previous-post">
+    {% if page.previous %}
+      <a href="{{ page.previous.url }}"><div class="nav-arrow">&larr;</div>{{ page.previous.title }}</a>
+    {% endif %}
+  </div>
+  <div class="next-post">
+    {% if page.next %}
+      <a href="{{ page.next.url }}">{{ page.next.title }}<div class="nav-arrow">&rarr;</div></a>
+    {% endif %}
+  </div>
+</nav>

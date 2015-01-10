@@ -6,17 +6,19 @@ title: Homepage
 {% for post in paginator.posts %}
     <article class="post">
         <header class="post-header">
+		  <time class="date">
+            {{ post.date | date: "%d %B %Y" }}
+          </time>
           <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-          <p class="date">
-            {{ post.date | date: "%B %d, %Y" }}
-          </p>
         </header>
-        <section class="post-excerpt">
-            {{ post.excerpt }}
-        </section>
-        <div class="read-full">
-          <a href="{{ post.url }}">Continue Reading ></a>
+        {% if post.featured-image %}
+        <div class="post-head-image-container">
+          <img class="responsive-img" src="/assets/blog/featured-img/{{ post.featured-image}}">
         </div>
+        {% endif %}
+        <section class="post-content">
+            {{ post.content }}
+        </section>
     </article>
 
 {% endfor %}
