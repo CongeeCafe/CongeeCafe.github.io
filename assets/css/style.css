@@ -12,18 +12,18 @@ a {
 }
 
 a:link {
-  color: #19965E;
+  color: #3AAD79;
   text-decoration: none;
 }
 
 a:visited {
-  color: #19965E;
+  color: #3AAD79;
   text-decoration: none;
 }
 
 a:hover {
   text-decoration: underline;
-  color: #006638;
+  color: #00773F;
 }
 
 .name a, .title a, .connect-icons a, .pagination a, .site-links a, .read-full a {
@@ -62,7 +62,7 @@ td {
 
 blockquote {
   padding-left: 0.7rem;
-  border-left: #19965E 0.2rem solid;
+  border-left: #3AAD79 0.2rem solid;
 }
 
 .highlight {
