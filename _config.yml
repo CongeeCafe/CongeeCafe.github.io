@@ -5,8 +5,8 @@ exclude: [README.md, .gitignore]
 
 about:
   name: Kevin Zhou
-  email: test@example.com
-  quickabout: "A Computer Science student at the University of Waterloo."
+  email: kzhou@live.ca
+  quickabout: "A Computer Science student at the University of Waterloo"
   
 external:
   github: CongeeCafe
