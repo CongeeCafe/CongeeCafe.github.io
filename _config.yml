@@ -1,6 +1,7 @@
 highlighter: pygments
 paginate: 4
 lsi: false
+permalink: /posts/:title
 exclude: [README.md, .gitignore]
 
 about:
