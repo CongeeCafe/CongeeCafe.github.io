@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Looking Through the Glass at Hack the North
-featured-image: HackTheNorth_Day1.jpg
+featured-image: HackTheNorth_2014.jpg
 ---
 
 This year, a thousand students from across the world gathered in Waterloo's Engineering 5 building for Hack the North, Canada's largest international hackathon.

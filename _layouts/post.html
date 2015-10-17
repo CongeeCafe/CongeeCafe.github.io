@@ -1,30 +1,40 @@
 ---
-layout: default
+layout: blog
 ---
-<time class="date">
-  {{ page.date | date: "%d %B %Y" }}
-</time>
-<h1 class="title">{{ page.title }}</h1>
 
-{% if page.featured-image %}
-<div class="post-head-image-container">
-  <img class="responsive-img" src="/assets/blog/featured-img/{{ page.featured-image}}">
+<div class="container posts">
+  <article class="post row">
+    <header class="post-header">
+      <h1 class="title balance-text">{{ page.title }}</h1>
+      <time class="date">
+            {{ page.date | date: "%d %B %Y" }}
+      </time>
+        </header>
+        {% if page.featured-image %}
+        <div class="post-head-image-container">
+            <img class="feature-img" src="/assets/blog/featured-img/{{ page.featured-image}}">
+        </div>
+        {% endif %}
+        <section class="content ten columns offset-by-one column">
+            {{ content }}
+        </section>
+  </article>
 </div>
-{% endif %}
 
-<div class="post">
-  {{ content }}
+
+<div id="blog-footer">
+  <div class="container">
+    <nav class="pagination">
+      <div class="previous-post">
+      {% if page.previous %}
+        <a href="{{ page.previous.url }}">{{ page.previous.title }} &raquo;</a>
+      {% endif %}
+      </div>
+      <div class="next-post">
+      {% if page.next %}
+        <a href="{{ page.next.url }}">&laquo; {{ page.next.title }}</a>
+      {% endif %}
+      </div>
+    </nav>
+  </div>
 </div>
-
-<nav class="pagination">
-  <div class="previous-post">
-    {% if page.previous %}
-      <a href="{{ page.previous.url }}"><div class="nav-arrow">&larr;</div>{{ page.previous.title }}</a>
-    {% endif %}
-  </div>
-  <div class="next-post">
-    {% if page.next %}
-      <a href="{{ page.next.url }}">{{ page.next.title }}<div class="nav-arrow">&rarr;</div></a>
-    {% endif %}
-  </div>
-</nav>

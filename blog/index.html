@@ -1,0 +1,49 @@
+---
+layout: blog
+title: Blog
+---
+
+<div class="container posts">
+	{% for post in paginator.posts %}
+	<article class="post row">
+		<header class="post-header">
+			<h1 class="title balance-text"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+			<time class="date">
+       			{{ post.date | date: "%d %B %Y" }}
+			</time>
+       	</header>
+       	{% if post.featured-image %}
+		<div class="post-head-image-container">
+			<img class="feature-img" src="/assets/blog/featured-img/{{ post.featured-image}}">
+		</div>
+       	{% endif %}
+       	<section class="content ten columns offset-by-one column">
+           	{{ post.content }}
+       	</section>
+
+    	{% if forloop.last == false %}
+    	<div class="twelve-columns hr row">
+    		<img class="divider" src="/assets/img/hr.svg"></img>
+    	</div>
+    	{% endif %}
+    </article>
+	{% endfor %}
+</div>
+
+<div id="blog-footer">
+	<div class="container">
+		<nav class="pagination" role="pagination">
+  			{% if paginator.previous_page %}
+    		{% if paginator.previous_page == 1 %}
+      		<a class="newer-posts" href="/blog/">&laquo; Newer Posts</a>
+    		{% else %}
+      		<a class="newer-posts" href="/blog/page{{ paginator.previous_page }}/">&laquo; Newer Posts</a>
+    		{% endif %}
+  			{% endif %}
+
+  			{% if paginator.next_page %}
+    		<a class="older-posts" href="/blog/page{{ paginator.next_page }}/">Older Posts &raquo;</a>
+  			{% endif %}
+		</nav>
+	</div>
+</div>

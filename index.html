@@ -3,36 +3,47 @@ layout: default
 title: Homepage
 ---
 
-{% for post in paginator.posts %}
-    <article class="post">
-        <header class="post-header">
-		  <time class="date">
-            {{ post.date | date: "%d %B %Y" }}
-          </time>
-          <h1 class="title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
-        </header>
-        {% if post.featured-image %}
-        <div class="post-head-image-container">
-          <img class="responsive-img" src="/assets/blog/featured-img/{{ post.featured-image}}">
-        </div>
-        {% endif %}
-        <section class="post-content">
-            {{ post.content }}
-        </section>
-    </article>
-
-{% endfor %}
-
-<nav class="pagination" role="pagination">
-  {% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}
-      <a class="newer-posts" href="/">&laquo; Newer Posts</a>
-    {% else %}
-      <a class="newer-posts" href="/page{{ paginator.previous_page }}/">&laquo; Newer Posts</a>
+<div class="container">
+  <div class="u-pull-left header-info">
+    <h4>{{ site.about.name }}</h4>
+    <p>{{ site.about.about-line1 }}<br>{{ site.about.about-line2 }}</p>
+    {% include site-nav.html %}
+  </div>
+  <div class="banner"></div>
+</div>
+<hr>
+<div class="section-container container">
+  <h4>Projects</h4>
+  <div class="section-content">
+    {% for project in site.data.projects %}
+    {% assign loopindex = forloop.index | modulo: 2 %}
+    {% if loopindex == 1 %}
+    <div class="row">
     {% endif %}
-  {% endif %}
+      <div class="one-half column">
+        <a href="{{ project.url }}">
+          <img class="project-img" src="{{ site.project-imgs }}/{{ project.image }}">
+          {{ project.name }}
+        </a>
+        <p>{{ project.description }}</p>
+      </div>
+    {% if loopindex == 0 %}
+    </div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</div>
+<hr>
+<div class="section-container container">
+  <h4>Recent Posts</h4>
+  <div class="section-content">
+    {% for post in site.posts limit:4 %}
+    <div class="post">
+      <div class="post-meta">{{ post.date | date: "%d %b %Y" }}</div>
+      <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
 
-  {% if paginator.next_page %}
-    <a class="older-posts" href="/page{{ paginator.next_page }}/">Older Posts &raquo;</a>
-  {% endif %}
-</nav>
+{% include footer.html %}

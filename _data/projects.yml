@@ -1,0 +1,8 @@
+- name: Weather Post
+  description: Clean weather app designed for ease of use. Built for Android using Environment Canada weather data and Retrofit.
+  url: https://play.google.com/store/apps/details?id=com.zhou.weatherpost
+  image: weather_post.jpg
+- name: Oriel Graph
+  description: Graphing calculator with calculation tools targeted for the secondary school curriculum.
+  url: https://github.com/CongeeCafe/oriel-graph
+  image: oriel_graph.png
