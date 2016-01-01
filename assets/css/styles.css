@@ -1,0 +1,333 @@
+body {
+  font-size: 1.65em;
+  font-family: "Karla", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.container {
+  max-width: 920px;
+}
+
+a {
+  color: #3073cd;
+}
+
+@font-face {
+    font-family: 'liberation_monoregular';
+    src: url('../font/LiberationMono-Regular-webfont.eot');
+    src: url('../font/LiberationMono-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/LiberationMono-Regular-webfont.woff') format('woff'),
+         url('../font/LiberationMono-Regular-webfont.ttf') format('truetype'),
+         url('../font/LiberationMono-Regular-webfont.svg#liberation_monoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+  text-decoration: none; }
+
+@media (min-width: 550px) {
+  .left {
+    float: left;
+  }
+
+  .right {
+    float: right;
+  }
+}
+
+@media (min-width: 550px) {
+  .home .column:nth-child(2) {
+    margin-left: 0; }
+}
+
+.home .row {
+  padding-top: 10px;
+  margin-bottom: 50px;
+}
+
+.home h4 {
+  color: #efba00;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+.home h5 {
+  color: #2f3f64;
+}
+
+#home-header {
+  background-image: url("/assets/img/hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin-bottom: 100px;
+}
+
+#home-header .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+#home-header h4 {
+  font-weight: bold;
+}
+
+#home-header p, #home-header h4 {
+  color: #fff;
+}
+
+.rocket {
+  position: absolute;
+  height: 140px;
+  width: auto;
+  margin-right: 20px;
+  margin-bottom: -50px;
+  bottom: 0;
+  right: 0;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+  .rocket {
+    height: 180px;
+    margin-right: 0;
+    margin-bottom: -80px;
+  }
+}
+
+@media (min-width: 550px) {
+  .rocket {
+    height: 200px;
+  }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+  .rocket {
+    height: 300px;
+  }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+  .rocket {
+    height: 360px;
+  }
+}
+
+#home-header a {
+  color: #c1cfff;
+  opacity: 0.6;
+}
+
+#home-header a:hover {
+  opacity: 1;
+}
+
+.blog-posts {
+  background-color: #f8f8f6;
+  padding: 40px 0 40px 0;
+}
+
+.header-info {
+  position: relative;
+  z-index: 1; }
+
+@media (min-width: 750px) {
+  .header-info {
+    margin-top: 90px;
+    margin-bottom: 70px; }
+}
+
+.header-nav li {
+  float: left;
+  list-style: outside none none;
+  margin-right: 1.5em;
+  text-decoration:none; }
+
+.header-nav li a {
+  text-transform: uppercase; }
+
+.section-container {
+  margin-top: 80px;
+  margin-bottom: 70px;
+  position: relative;
+  z-index: 1; }
+
+@media (min-width: 550px) {
+.section-container .section-content {
+  margin-left: 30px; }
+}
+
+.post {
+  margin-bottom: 0.3em;
+}
+
+.post-meta {
+  position: reltative;
+  float: left;
+  margin-right: 1.5em;
+  font-size: 0.93em;
+  line-height: 1.9em;
+  font-family: 'liberation_monoregular', monospace;
+  display: block;
+  color: #9b9b9b; }
+
+.post-title {
+  position: relative;
+  display: block;
+}
+
+.feature-img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.project-img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  margin-top: 5px;
+  margin-bottom: 25px;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 25px;
+}
+
+.footer p {
+  color: #9b9b9b;
+  font-size: 0.8em;
+  font-style: italic;
+  vertical-align: middle;
+}
+
+.footer img {
+  height: 25px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
+#blog-header, #blog-footer {
+  background-color: #fafafa;
+  padding: 25px;
+  vertical-align: middle;
+}
+
+#blog-header .name {
+  float: left;
+  font-weight: bold;
+  font-size: 1.15em;
+  margin: 0;
+}
+
+.name a  {
+  color: #222;
+}
+
+#blog-header .header-nav {
+  float: right;
+  margin: 0;
+  vertical-align: middle;
+}
+
+#blog-header .header-nav li {
+  margin: 0 0 0 1.5em;
+}
+
+.post-header {
+  margin: 60px 0 25px 0;
+  text-align: center;
+}
+
+.post-header h1 {
+  margin-bottom: 5px;
+}
+
+.post-header .date {
+  color: #a4a4a4;
+  font-size: 0.95em;
+}
+
+@media (max-width: 550px) {
+  #blog-header .name {
+    float: none;
+    margin-bottom: 0.5em;
+    text-align: center; }
+
+  #blog-header .header-nav li {
+    float: none;
+    display: inline;
+    margin: 0 0.75em 0 0.75em; }
+
+  #blog-header .header-nav {
+    float: none;
+    text-align: center; }
+}
+
+.post h1 {
+  font-family: "Lusitana", serif;
+}
+
+.post .content {
+  margin-bottom: 3em;
+}
+
+.posts .hr {
+  text-align: center;
+}
+
+.posts .divider {
+  width: 110px;
+  opacity: 0.2;
+}
+
+figure {
+  text-align: center;
+}
+
+figcaption {
+  font-size: 0.9em;
+  font-style: italic;
+}
+
+.newer-posts, .older-posts {
+  display: block;
+}
+
+.pagination .newer-posts {
+  float: left;
+}
+
+.pagination .older-posts {
+  float: right;
+}
+
+nav.pagination .next-post {
+  float: left;
+  margin-right: 1.5rem;
+}
+
+nav.pagination .previous-post {
+  float: right;
+  margin-left: 1.5rem;
+  text-align: right;
+}
+
+nav.pagination .previous-post .nav-arrow {
+  display: inline-block;
+  position: relative;
+  float: left;
+  margin-right: 0.4em;
+  top: -2px;
+}
+
+nav.pagination .next-post .nav-arrow {
+  display: inline-block;
+  position: relative;
+  float: right;
+  margin-left: 0.4em;
+  top: -2px;
+}

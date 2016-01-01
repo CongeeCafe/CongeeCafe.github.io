@@ -2,14 +2,14 @@ highlighter: pygments
 paginate: 4
 paginate_path: "/blog/page:num/"
 lsi: false
-project-imgs: assets/img/project/
+project-imgs: assets/img/project
 permalink: /blog/:title
 exclude: [README.md, .gitignore]
 
 about:
   name: Kevin Zhou
   email: kevin@congeecafe.com
-  about-line1: "I'm a computer science student at U Waterloo."
+  about-line1: "Computer science student at U Waterloo."
   about-line2: "Former software developer at TD Lab."
   site-repo: CongeeCafe/CongeeCafe.github.io
   

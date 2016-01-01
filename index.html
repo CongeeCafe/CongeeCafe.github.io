@@ -2,47 +2,40 @@
 layout: default
 title: Homepage
 ---
-
-<div class="container">
-  <div class="u-pull-left header-info">
-    <h4>{{ site.about.name }}</h4>
-    <p>{{ site.about.about-line1 }}<br>{{ site.about.about-line2 }}</p>
-    {% include site-nav.html %}
-  </div>
-  <div class="banner"></div>
-</div>
-<hr>
-<div class="section-container container">
+{% include home-header.html %}
+<div class="home container">
   <h4>Projects</h4>
-  <div class="section-content">
-    {% for project in site.data.projects %}
-    {% assign loopindex = forloop.index | modulo: 2 %}
-    {% if loopindex == 1 %}
-    <div class="row">
-    {% endif %}
-      <div class="one-half column">
-        <a href="{{ project.url }}">
-          <img class="project-img" src="{{ site.project-imgs }}/{{ project.image }}">
-          {{ project.name }}
-        </a>
-        <p>{{ project.description }}</p>
-      </div>
-    {% if loopindex == 0 %}
+  {% for project in site.data.projects %}
+  {% assign loopindex = forloop.index | modulo: 2 %}
+  <div class="row">
+  {% if loopindex == 1 %}
+    <div class="one-half column">
+  {% else %}
+    <div class="one-half column right">
+  {% endif %}
+      <img class="project-img" src="{{ site.project-imgs }}/{{ project.image }}">
     </div>
-    {% endif %}
-    {% endfor %}
+  {% if loopindex == 1 %}
+    <div class="one-half column right">
+  {% else %}
+    <div class="one-half column">
+  {% endif %}
+      <h5>{{ project.name }}</h5>
+      <p>{{ project.description }}</p>
+      <a href="{{ project.url }}">{{ project.action }}</a>
+    </div>
   </div>
+  {% endfor %}
 </div>
-<hr>
-<div class="section-container container">
-  <h4>Recent Posts</h4>
-  <div class="section-content">
-    {% for post in site.posts limit:4 %}
-    <div class="post">
-      <div class="post-meta">{{ post.date | date: "%d %b %Y" }}</div>
-      <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
-    </div>
-    {% endfor %}
+<div class="blog-posts">
+  <div class="home container">
+    <h4>Recent Posts</h4>
+      {% for post in site.posts limit:4 %}
+      <div class="post">
+       <div class="post-meta">{{ post.date | date: "%d %b %Y" }}</div>
+       <div class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></div>
+      </div>
+      {% endfor %}
   </div>
 </div>
 
