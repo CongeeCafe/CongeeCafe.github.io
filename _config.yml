@@ -8,7 +8,7 @@ exclude: [README.md, .gitignore]
 
 about:
   name: Kevin Zhou
-  email: kevin@congeecafe.com
+  email: hello@kevinzhou.ca
   about-line1: "Computer science student at U Waterloo."
   about-line2: "Former software developer at TD Lab."
   site-repo: CongeeCafe/CongeeCafe.github.io
