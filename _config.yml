@@ -19,3 +19,5 @@ external:
   linkedin: kevin-zhou-490822bb
 
 plugins: [jekyll-paginate]
+kramdown:
+    smart_quotes: ["apos", "apos", "quot", "quot"]
