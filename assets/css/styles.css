@@ -323,6 +323,10 @@ figcaption {
   font-style: italic;
 }
 
+li {
+  margin-bottom: auto;
+}
+
 .newer-posts, .older-posts {
   display: block;
 }
