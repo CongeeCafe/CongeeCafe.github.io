@@ -289,8 +289,33 @@ a {
   opacity: 0.2;
 }
 
+blockquote{
+  font-style: italic;
+  position: relative;
+}
+
+blockquote::before{
+  font-family: "Lusitana";
+  content: "\201C";
+  color:#DDDDDD;
+  font-size:6em;
+  position: absolute;
+  left:-57px;
+  top:-43px;
+}
+
+blockquote::after{
+  content: '';
+}
+
 figure {
   text-align: center;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+figure img {
+  max-width: 100%;
 }
 
 figcaption {
