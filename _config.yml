@@ -17,3 +17,5 @@ external:
   github: CongeeCafe
   stackoverflow: 3408377/congeecafe
   linkedin: kevin-zhou-490822bb
+
+plugins: [jekyll-paginate]
